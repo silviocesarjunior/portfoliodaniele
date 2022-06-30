@@ -31,6 +31,45 @@ header ul li a:hover {
 }
 
 .home-btn {
-    background: linear-gradient(145deg, #e2e8ec, #ffffff);
+    background: linear-gradient(145deg, #ffffff, #ffffff);
     box-shadow: 4px 4px 8px #cbcbcb, 4px -4px 8px #ffffff;
 }
+
+.home-btn:hover {
+    background-color: #ff014f;
+    color: black;
+}
+
+.open {
+    display: none;
+}
+
+.header.active {
+    height: 12vh;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: #e2e8ec;
+    box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.75);
+    transition: 0.5s;
+}
+
+@media (max-width: 768px){
+    header ul {
+        padding-top: 30px;
+    }
+    .nav-links-mobile{
+        position: absolute;
+        display: block;
+        list-style: none;
+        box-shadow: rgba(50, 50, 93, 0.23) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0 30px 60px -30px;
+        left: 0;
+        top: 0;
+        transition: all 0.5s ease-in-out;
+        width: 60%;
+        height: 100vh;
+        background-color: white;
+        z-index: 888;
+    }
+}
+
