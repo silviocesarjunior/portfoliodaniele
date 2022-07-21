@@ -2,7 +2,7 @@
     font-size: 40px;
 }
 .Resume .content {
-    min-width: 85%;
+    max-width: 85%;
     margin: auto;
 }
 
@@ -41,4 +41,54 @@
     background: #ff014f;
     box-shadow: none;
     color: white;
+}
+
+.Resume .box:hover p {
+    color: white;
+}
+
+.Resume .content-section {
+    position: relative;
+}
+
+.Resume .left {
+    position: relative;
+}
+
+.Resume .left::after {
+    content: "";
+    position: absolute;
+    top: 16%;
+    left: 0;
+    height: 118vh;
+    width: 5px;
+    background: #d9dee2;
+    z-index: -2;
+}
+
+.Resume .box::after {
+    content: "";
+    position: absolute;
+    top: 13%;
+    left: -8;
+    height: 5px;
+    width: 50px;
+    background: #d9dee2;
+}
+
+.Resume .box::before {
+    content: "";
+    position: absolute;
+    top: 11%;
+    left: -9.5%;
+    height: 10px;
+    width: 10px;
+    background: #d9dee2;
+    border: 2px solid #d9dee2;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+.Resume .box:hover.box:before {
+    background: #ff014f;
 }
