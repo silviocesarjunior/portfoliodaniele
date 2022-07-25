@@ -41,5 +41,12 @@ const Portfolio_data = [
       title: "Designer de salas, quartos, cozinha, lounge ",
       image: "../../6.jpeg",
     },
+    {
+      id: 7,
+      category: "Interiores",
+      totalLike: "630",
+      title: "Designer de salas, quartos, cozinha, lounge ",
+      image: "../../6.jpeg",
+    },
 ]
 export default Portfolio_data

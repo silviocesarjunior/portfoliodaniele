@@ -9,14 +9,14 @@ const Resume = () => {
       <section className='Resume' id='resume'>
         <div className='container top'>
           <div className='heading text-center'>
-            <h4>1 ano de experiência profissional</h4>
+            <h4>1 ano de experiência profissional em arquitetura</h4>
             <h1>Meu currículo</h1>
           </div>
 
           <div className='content-section mtop d_flex'>
             <div className='left'>
               <div className='heading'>
-                <h4>2007-2010</h4>
+                <h4>2013-2022</h4>
                 <h1>Qualificação</h1>
               </div>
 
@@ -30,7 +30,7 @@ const Resume = () => {
             </div>
             <div className='left'>
               <div className='heading'>
-                <h4>2007-2010</h4>
+                <h4>2014-2022</h4>
                 <h1>Experiência profissional</h1>
               </div>
 

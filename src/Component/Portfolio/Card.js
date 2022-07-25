@@ -14,10 +14,6 @@ const Card = (props) => {
                 </div>
                 <div className="category d_flex">
                     <span onClick={toggleModal}>{props.category}</span>
-                    <label>
-                        <i className="far fa-heart"></i>
-                        {props.totalLike}
-                    </label>
                 </div>
                 <div className="title">
                     <h2 onClick={toggleModal}>{props.title}</h2>
@@ -40,12 +36,7 @@ const Card = (props) => {
                             <h1>{props.title}</h1>
                             <p>Aqui aparece o conteudo do projeto selecionado</p>
                             <div className="button f_flex mtop">
-                                <button className="btn_shadow">
-                                    Deixe o seu like <i className="far fa-thumbs-up"></i>
-                                </button>
-                                <button className="btn_shadow">
-                                    Ver projeto <i className="fas fa-chevron-right"></i>
-                                </button>
+                                
                                 </div>
                                 <button className="close-modal btn_shadow" onClick={toggleModal}>
                                     <i className="fas fa-times"></i>

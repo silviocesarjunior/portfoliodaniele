@@ -28,7 +28,8 @@ const Header = () => {
                             <li><a href="#clients">clientes</a></li>
                             <li><a href="#blog">blog</a></li>
                             <li><a href="#contact">contato</a></li>
-                            <li><button className="home-btn">Orçamento</button>
+                            <li><a href="https://wa.me/55012991026146">
+                                <button className="home-btn">Orçamento</button></a>
                             </li>
                         </ul>
                         <button className="toggle" onClick={() => setMobile(!Mobile)}>

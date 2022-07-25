@@ -27,7 +27,7 @@ const Card = (props) => {
             {modal && (
                 <div className="modal modal-blog">
                     <div onClick={toggleModal} className="overlay"></div>
-                    <div className="modal-content d_flex">
+                    <div className="modal-content">
                         <div className="modal-img left">
                             <img src={props.image} alt="" />
                         </div>

@@ -1,4 +1,29 @@
 .modal-blog.modal,
 .modal-blog.overlay {
     overflow: scroll;
+    
 }
+
+.modal-blog.modal .modal-content {
+    position: relative;
+    left: 0;
+    max-width: 40%;
+    margin: auto;
+    margin-bottom: 10%;
+}
+
+.modal-blog .modal-content .right, 
+.modal-blog .modal-content .left {
+    width: 50%;
+    padding: 0;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .modal-blog.modal .modal-content {
+      max-width: 90%;
+    }
+    .modal-blog.modal .modal-content {
+      margin-bottom: 20%;
+    }
+  }
