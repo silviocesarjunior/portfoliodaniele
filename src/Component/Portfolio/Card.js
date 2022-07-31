@@ -32,9 +32,9 @@ const Card = (props) => {
                             <img src={props.image} alt=""/>
                         </div>
                         <div className="modal-text right">
-                            <span>Especificações</span>
+                            <span>Descrição das atividades feitas</span>
                             <h1>{props.title}</h1>
-                            <p>Aqui aparece o conteudo do projeto selecionado</p>
+                            <p>{props.content}</p>
                             <div className="button f_flex mtop">
                                 
                                 </div>
