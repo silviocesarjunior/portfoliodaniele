@@ -3,7 +3,7 @@ const data = [
         id : 1,
         image:"https://img.icons8.com/external-filled-outline-mangsaabguru-/64/000000/external-architechture-real-estate-filled-filled-outline-mangsaabguru--28.png",
         title:"Arquitetura e Urbanismo",
-        desc:"Posso projetar a planta da sua casa ou propriedade, realizar o acabamento em programas 3d e projetar a planta baixa ",
+        desc:"Posso projetar desde a planta baixa da sua casa ou propriedade até o acabamento final, com retoques de arborismo. Posso realizar projetos de reforma sem prejudicar o espaço ambiente.",
     },
     {
         id : 2,
