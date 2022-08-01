@@ -16,7 +16,7 @@ const Home = () => {
             <h2>
 
               <span>
-                <Typewriter words={[" Arquiteta.", " Designer de interiores.", " Cadista."]} loop cursor cursorStyle='|' typeSpeed={70} deleteSpeed={50} delaySpeed={1000} />
+                <Typewriter words={[" Arquiteta.", " Designer de interiores.", " Cadista.", "Projetista."]} loop cursor cursorStyle='|' typeSpeed={70} deleteSpeed={50} delaySpeed={1000} />
               </span>
             </h2>
 
