@@ -15,7 +15,7 @@ Projeto desenvolvido para uma recém formada em arquitetura e urbanismo, onde a 
 <br>
 
 <p align="center">
-  <img alt="Daniele Galvani - Arquiteta" src="./src/component/pic/arquiteta.png" width="100%">
+  <img alt="Daniele Galvani - Arquiteta" src="./src/Component/pic/arquiteta.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
