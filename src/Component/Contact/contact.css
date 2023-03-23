@@ -1,64 +1,56 @@
-.Contact .left {
-    width: 36%;
+.titleContact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  font-size: 50px;
+}
+.containerContact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  padding: 2rem;
 }
 
-.Contact .right {
-    width: 60%;
+.form {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.Contact .box {
-    padding: 30px;
+.input {
+  margin-bottom: 14px;
+  height: 34px;
+  border-radius: 4px;
+  border: 0;
+  padding: 0 8px;
 }
 
-.Contact .details h1 {
-    margin: 20px 0 20px 0;
-    font-size: 35px;
+.textarea {
+  margin-bottom: 14px;
+  border-radius: 4px;
+  border: 0;
+  padding: 8px;
+  height: 94px;
+  resize: none;
 }
 
-.Contact .details p {
-    font-size: 17px;
+.buttonContact {
+  height: 100%;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+  background-color: #ff014f;
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.Contact .button {
-    margin-top: 20px;
+.icons_footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
 }
-
-.Contact .button {
-    margin-right: 20px;
-}
-
-.Contact .right {
-    padding: 35px;
-}
-
-.Contact .input span {
-    font-size: 13px;
-}
-
-.Contact input {
-    margin-top: 10px;
-}
-
-.Contact .right button {
-    width: 100%;
-    color: #ff104f;
-}
-
-.Contact .right button:hover {
-    color: white;
-}
-
-.Contact .right button i {
-    margin-left: 10px;
-}
-@media (max-width: 768px) {
-    .Contact .d_flex {
-      flex-direction: column;
-    }
-    .Contact .left,
-    .Contact .right {
-      width: 100%;
-      margin-top: 50px;
-    }
-  }
-

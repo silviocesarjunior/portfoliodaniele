@@ -1,103 +1,81 @@
 import React, { useState } from 'react';
 import "./contact.css";
-import contact from "../pic/contact.png";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
-  const [data, setData] = useState({
-    nome: "",
-    telefone: "",
-    email: "",
-    assunto: "",
-    meensagem: "",
-  })
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
-  const InputEvent = (event) => {
-    const { name, value } = event.target
+  function sendEmail(e) {
+    e.preventDefault();
 
-    setData((preVal) => {
-      return {
-        ...preVal,
-        [name]: value,
-      }
-    })
-  }
+    if (name === "" || (email === "") | (message === "")) {
+      alert("please fill in all fields");
+      return;
+    }
 
-  const formSubmit = (event) => {
-    event.preventDefault()
-    alert(
-      `Meu nome é: ${data.nome}. 
-        Meu telefone é: ${data.telefone}. 
-        Meu email é: ${data.email}. 
-        O assunto seria: ${data.assunto}. 
-        Sua mensagem é: ${data.mensagem}. 
-        `
-    )
+    const templateParams = {
+      from_name: name,
+      message: message,
+      email: email,
+    };
+    emailjs
+      .send(
+        "service_kb3vskm",
+        "template_17j4yrp",
+        templateParams,
+        "dXnl2Ho1Wixl32gU3"
+      )
+      .then(
+        (response) => {
+          console.log("Email sent", response.status, response.text);
+          setName("");
+          setEmail("");
+          setMessage("");
+        },
+        (err) => {
+          console.log("Error: ", err);
+        }
+      );
   }
   return (
     <>
-      <section className='Contact' id='contact'>
-        <div className='container top'>
-          <div className='heading text-center'>
-            <h4>Contato</h4>
-            <h1>Entre em contato</h1>
-          </div>
+      <section id="contact">
+        <div className="divContact">
+      <h1 className="titleContact">Formulário de contato</h1>
+      <div className="containerContact">
+        <form className="form" onSubmit={sendEmail}>
+          <input
+            className="input"
+            type="text"
+            placeholder="Nome"
+            onChange={(e) => setName(e.target.value)}
+            value={name}
+          />
 
-          <div className='content d_flex'>
-            <div className='left'>
-              <div className='box box_shodow'>
-                <div className='img'>
-                  <img src={contact} alt='' />
-                </div>
-                <div className='details'>
-                  <h1>Daniele Galvani</h1>
-                  <p>Arquiteta e designer de interiores</p>
-                  <p>Disponível para trabalhos freelancer, PJ e com carteira assinada</p> <br />
-                  <p>Email: danimoraesgalvani@gmail.com</p> <br />
-                  <span>Contate através</span>
-                  <div className='button f_flex'>
-                    <button className='btn_shadow'>
-                      <a href="https://www.linkedin.com/in/daniele-de-moraes-galvani-santos-41023b114/"><abbr title="Linkedin">
-                        <img src="https://img.icons8.com/fluency/48/000000/linkedin.png" alt="Linkedin" />
-                      </abbr></a>
-                    </button>
-                   
-                  </div>
-                </div>
-              </div>
-            </div>
+          <input
+            className="input"
+            type="text"
+            placeholder="E-mail"
+            onChange={(e) => setEmail(e.target.value)}
+            value={email}
+          />
 
-            <div className='right box_shodow'>
-              <form onSubmit={formSubmit}>
-                <div className='f_flex'>
-                  <div className='input row'>
-                    <span>Seu nome</span>
-                    <input type='text' name='nome' value={data.nome} onChange={InputEvent} />
-                  </div>
-                  <div className='input row'>
-                    <span>Telefone</span>
-                    <input type='number' name='telefone' value={data.telefone} onChange={InputEvent} />
-                  </div>
-                </div>
-                <div className='input'>
-                  <span>E-mail </span>
-                  <input type='email' name='email' value={data.email} onChange={InputEvent} />
-                </div>
-                <div className='input'>
-                  <span>Assunto </span>
-                  <input type='text' name='assunto' value={data.assunto} onChange={InputEvent} />
-                </div>
-                <div className='input'>
-                  <span>Sua mensagem </span>
-                  <textarea cols='30' rows='10' name='mensagem' value={data.mensagem} onChange={InputEvent}></textarea>
-                </div>
-                <button className='btn_shadow'>
-                  Enviar mensagem <i className='fa fa-long-arrow-right'></i>
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
+          <textarea
+            className="textarea"
+            placeholder="Mensagem..."
+            onChange={(e) => setMessage(e.target.value)}
+            value={message}
+          />
+
+          <input className="buttonContact" type="submit" value="Send" />
+        </form>
+      </div>
+      <div className="icons_footer">
+      </div>
+      </div>
+    </section>
     </>
   )
 }

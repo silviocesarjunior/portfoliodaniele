@@ -7,11 +7,11 @@ import Portfolio_data from "./Portfolio_data";
 const Portfolio = () => {
     return (
         <>
+        <div className="divPortfolio">
             <section className="portfolio top" id="portfolio">
                 <div className="container">
                     <div className="heading text-center">
-                        <h4>Visite o meu portfolio</h4>
-                        <h1>Meu Portfolio</h1>
+                        <h4>Visite o meu Portfólio</h4>
                     </div>
                     
                     <div className="content grid">
@@ -21,6 +21,7 @@ const Portfolio = () => {
                     </div>
                 </div>
             </section>
+            </div>
         </>
     )
 }

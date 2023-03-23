@@ -26,3 +26,52 @@
     color: white;
     opacity: 1;
 }
+
+@media (max-width: 768px) {
+    h4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+    }
+    h1 {
+        padding: 10px;
+        padding-bottom: 40px;
+    }
+    
+    .features .box{
+        padding: 40px;
+        padding-top: 40px;
+    }
+    
+    .features .box h2 {
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .features .box p {
+        word-spacing: 2px;
+        transition: 0.5s;
+    }
+    
+    .features .box i {
+        font-size: 30px;
+        margin-top: 20px;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    
+    .features .box:hover p{
+        color: white;
+    }
+    
+    .features .box:hover i{
+        color: white;
+        opacity: 1;
+    }
+    .content {
+        width:10rem;
+        height: 45rem;
+    }
+   
+}
