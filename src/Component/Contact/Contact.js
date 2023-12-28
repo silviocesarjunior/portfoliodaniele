@@ -1,84 +1,49 @@
-import React, { useState } from 'react';
+import React from "react";
 import "./contact.css";
-import emailjs from "@emailjs/browser";
 
 const Contact = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
-  function sendEmail(e) {
-    e.preventDefault();
-
-    if (name === "" || (email === "") | (message === "")) {
-      alert("please fill in all fields");
-      return;
-    }
-
-    const templateParams = {
-      from_name: name,
-      message: message,
-      email: email,
-    };
-    emailjs
-      .send(
-        "service_kb3vskm",
-        "template_17j4yrp",
-        templateParams,
-        "dXnl2Ho1Wixl32gU3"
-      )
-      .then(
-        (response) => {
-          console.log("Email sent", response.status, response.text);
-          setName("");
-          setEmail("");
-          setMessage("");
-        },
-        (err) => {
-          console.log("Error: ", err);
-        }
-      );
-  }
   return (
     <>
       <section id="contact">
-        <div className="divContact">
-      <h1 className="titleContact">Formulário de contato</h1>
-      <div className="containerContact">
-        <form className="form" onSubmit={sendEmail}>
-          <input
-            className="input"
-            type="text"
-            placeholder="Nome"
-            onChange={(e) => setName(e.target.value)}
-            value={name}
-          />
-
-          <input
-            className="input"
-            type="text"
-            placeholder="E-mail"
-            onChange={(e) => setEmail(e.target.value)}
-            value={email}
-          />
-
-          <textarea
-            className="textarea"
-            placeholder="Mensagem..."
-            onChange={(e) => setMessage(e.target.value)}
-            value={message}
-          />
-
-          <input className="buttonContact" type="submit" value="Send" />
-        </form>
-      </div>
-      <div className="icons_footer">
-      </div>
-      </div>
-    </section>
+        <footer class="footer">
+          <div class="box-container-footer">
+            <div class="box-footer">
+              <h3>Links rápidos</h3>
+              <a class="links" href="#home">
+                Home
+              </a>
+              <a class="links" href="#features">
+                Serviços
+              </a>
+              <a class="links" href="#portfolio">
+                Portfólio
+              </a>
+            </div>
+            <div class="boxfooter">
+              <h3>Contatos</h3>
+              <p>
+                <i class="fas fa-phone"></i> +12 99102-6146
+              </p>
+              <p>
+                <i class="fas fa-envelope"></i> danimoraesgalvani@gmail.com
+              </p>
+              <p>
+                <i class="fas fa-map"></i> São Paulo, Brasil
+              </p>
+              </div>
+            </div>
+            <div class="boxfooter2">
+              <h3>Reflexão</h3>
+              <p>
+                "se os teus sonhos não te assustam, eles não são grandes o
+                suficiente."
+              </p>
+              <p>Ellen Johnson Sirleaf</p>
+            </div>
+        </footer>
+      </section>
     </>
-  )
-}
+  );
+};
 
-
-export default Contact
+export default Contact;

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import "./header.css";
-import logo from "../pic/daniele.png";
 
 const Header = () => {
 
@@ -16,7 +15,7 @@ const Header = () => {
             <header className="header">
                 <div className="container d_flex">
                     <div className="logo">
-                        <img src={logo} alt="" />
+                       <a href="#home"><h2>Daniele Galvani</h2></a> 
                     </div>
                     <div className="navlist">
                         {/*<ul className="link f_flex uppercase">*/}
@@ -24,7 +23,6 @@ const Header = () => {
                             <li><a href="#home">Home</a></li>
                             <li><a href="#features">Serviços</a></li>
                             <li><a href="#portfolio">portfolio</a></li>
-                            <li><a href="#resume">curriculo</a></li>
                             <li><a href="#contact">contato</a></li>
                             <li><a href="https://wa.me/55012991026146">
                                 <button className="home-btn">Orçamento</button></a>

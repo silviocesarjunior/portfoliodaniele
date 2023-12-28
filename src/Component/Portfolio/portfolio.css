@@ -1,5 +1,5 @@
 .divPortfolio{
-    height: 270vh;
+    height: 220vh;
 }
 
 .portfolio {
@@ -157,7 +157,7 @@
 
 @media (max-width: 768px) {
     .divPortfolio{
-        height: 235vh;
+        height: 355vh;
     }
 
     .top {

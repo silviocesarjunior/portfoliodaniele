@@ -98,5 +98,23 @@
     scale: 0.9;
     padding-right: 40px;
   }
+  .hero_btn {
+    flex-direction: column; /* Altera a direção do flexbox para coluna */
+    align-items: center; /* Centraliza os itens ao longo do eixo transversal (vertical) */
+    text-align: center; /* Alinha o texto ao centro */
+  }
+
+  .col_1 {
+    margin-bottom: 20px; /* Adiciona um espaço entre as duas colunas */
+  }
+
+  .button {
+    margin-top: 10px; /* Adiciona um espaço acima do botão */
+  }
+
+  /* Estilos adicionais para os botões de habilidades (pode variar conforme a necessidade) */
+  .col_1 button {
+    margin: 5px; /* Adiciona um espaço entre os botões de habilidades */
+  }
 
 }

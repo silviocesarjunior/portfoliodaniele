@@ -17,7 +17,7 @@ const Home = () => {
                 <Typewriter
                   words={[
                     " Arquiteta.",
-                    " Designer de interiores.",
+                    " Designer de Interiores.",
                     " Cadista.",
                     "Projetista.",
                   ]}
@@ -32,38 +32,20 @@ const Home = () => {
             </h2>
 
             <p>
-              Casada, mãe de uma linda menininha de 3 anos. Atualmente estou em fase
-              de experiência como atendente e orçamentista, nas horas vagas
-              busco desenvolver alguns projetos afim de atrair recrutadores e
-              quem sabe conseguir o meu primeiro emprego fixo como arquiteta ou
-              assistente de arquitetura, busco trabalhar junto a um time
-              colaborativo, paciente e desafiador.
+              Possuo habilidades em Autocad, Sketchup, Revit, com proficiência
+              em inglês em nível B1. Dedico-me diariamente à prática em
+              projetos, aprofundando-me no universo do design de interiores e na
+              construção civil como um todo. <br />
+              Para me manter atualizada, aproveito cursos gratuitos na Udemy,
+              participo de transmissões ao vivo na área da construção civil e
+              mantenho-me atualizada por meio da leitura de artigos e materiais
+              relacionados."
             </p>
 
             <div className="hero_btn d_flex">
               <div className="col_1">
                 <h4>Encontre-me nas redes sociais</h4>
                 <div className="button">
-                  <button className="btn_shadow">
-                    <a href="">
-                      <abbr title="facebook">
-                        <img
-                          src="https://img.icons8.com/color/48/000000/facebook-new.png"
-                          alt="facebook"
-                        />
-                      </abbr>
-                    </a>
-                  </button>
-                  <button className="btn_shadow">
-                    <a href="">
-                      <abbr title="Instagram">
-                        <img
-                          src="https://img.icons8.com/fluency/48/000000/instagram-new.png"
-                          alt="Instagram"
-                        />
-                      </abbr>
-                    </a>
-                  </button>
                   <button className="btn_shadow">
                     <a href="https://www.linkedin.com/in/danielegalvanisantos/">
                       <abbr title="Linkedin">
@@ -95,10 +77,10 @@ const Home = () => {
                   </abbr>
                 </button>
                 <button className="btn_shadow">
-                  <abbr title="Photoshop">
+                  <abbr title="Sketchup">
                     <img
-                      src="https://img.icons8.com/color/48/000000/adobe-photoshop--v1.png"
-                      alt="Photoshop"
+                      src="https://img.icons8.com/color/48/google-sketchup.png"
+                      alt="Sketchup"
                     />
                   </abbr>
                 </button>

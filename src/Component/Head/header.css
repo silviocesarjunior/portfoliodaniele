@@ -16,6 +16,7 @@ header {
   }
   header ul li a:hover {
     color: #ff014f;
+    font-size: 20px;
   }
   .home-btn {
     padding: 18px 25px;
@@ -46,6 +47,7 @@ header {
     box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.75);
     transition: 0.5s;
   }
+
   @media (max-width: 768px) {
     header ul {
       padding-top: 30px;

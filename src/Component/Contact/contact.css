@@ -1,56 +1,72 @@
-.titleContact {
+#contact {
+  text-align: center;
+  padding: 20px;
+}
+
+.footer {
+  color: #000;
+  height: 2vh;
+}
+
+.box-container-footer {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #000000;
-  font-size: 50px;
-}
-.containerContact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  color: #fff;
-  padding: 2rem;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.form {
-  max-width: 600px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+.box-footer {
+  width: 30%;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.input {
-  margin-bottom: 14px;
-  height: 34px;
-  border-radius: 4px;
-  border: 0;
-  padding: 0 8px;
+.links {
+  color: #000;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
 }
 
-.textarea {
-  margin-bottom: 14px;
-  border-radius: 4px;
-  border: 0;
-  padding: 8px;
-  height: 94px;
-  resize: none;
+.boxfooter {
+  width: 30%;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.buttonContact {
-  height: 100%;
-  border-radius: 4px;
-  border: 0;
-  cursor: pointer;
-  background-color: #ff014f;
-  font-size: 24px;
+.share {
+  margin-top: 20px;
+}
+
+.share h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.share a {
+  color: #000;
+  text-decoration: none;
+}
+
+.footer a {
+  padding: 10px;
+}
+
+.footer a:hover {
+  color: #ff014f;
   font-weight: bold;
 }
 
-.icons_footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 3rem;
+.boxfooter i {
+  color: #ff014f;
+}
+
+@media (max-width: 768px) {
+  .box-footer,
+  .boxfooter {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .footer {
+    height: 80vh;
+  }
 }
